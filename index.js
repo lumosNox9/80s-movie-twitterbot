@@ -1,12 +1,13 @@
 var Twit = require('twit');
 var http = require('http');
-var Promise = require("bluebird");
 var twitInfo = require('./config.js');
 var quotesJSON = require('./quotes.js');
 var twitter = new Twit(twitInfo);
 var quotesArr = [];
+var quote;
 
 var getQuotes = function () {
+  console.log('getQuotes');
   var tempArr = quotesJSON();
   for(var i = 0; i < tempArr.length; i++) {
     quotesArr.push(tempArr[i]);
@@ -17,6 +18,7 @@ var getQuotes = function () {
 };
 
 var chooseQuote = function() {
+  console.log('chooseQuote');
   var tempQuote;
   if(quotesArr <= 0) {
     console.log("Quotes array is less than zero!");
@@ -33,6 +35,28 @@ var postToTwitter = function () {
   });
 };
 
-getQuotes();
-var quote = chooseQuote();
-postToTwitter();
+var pickTheQuote = new Promise(function(resolve, reject) {
+  getQuotes();
+  if(quotesArr <= 0) {
+    reject(pickTheQuote);
+    return;
+  } else {
+    resolve(pickTheQuote);
+  }
+});
+
+pickTheQuote.then(
+  function() {
+    quote = chooseQuote();
+  }
+)
+.then(
+  function() {
+    postToTwitter();
+  }
+)
+.catch(
+  function(err) {
+    console.log('Error: ' + err);
+  }
+);
