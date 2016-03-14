@@ -1,0 +1,21 @@
+{
+  "name": "80s-movie-bot",
+  "version": "1.0.0",
+  "description": "twitterbot with 80s movie quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "80s",
+    "movie",
+    "quotes"
+  ],
+  "author": "carmalou",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "http": "0.0.0",
+    "twit": "^2.2.3"
+  }
+}
