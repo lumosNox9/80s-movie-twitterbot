@@ -6,19 +6,6 @@ var quotesJSON = require('./quotes.js');
 var twitter = new Twit(twitInfo);
 var quotesArr = [];
 
-// var getQuotes = function () {
-//   http.get('./quotes.json/', function(response) {
-//     response.setEncoding('utf-8');
-//     console.log('response: ' + response);
-//     response.on('data', function(data) {
-//       quotesArr.push(data);
-//     })
-//     response.on('error', function(error) {
-//       console.log('error! ' + error);
-//     })
-//   });
-// };
-
 var getQuotes = function () {
   var tempArr = quotesJSON();
   for(var i = 0; i < tempArr.length; i++) {
