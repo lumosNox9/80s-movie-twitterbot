@@ -1,10 +1,17 @@
 var Twit = require('twit');
 var http = require('http');
-var twitInfo = require('./config.js');
+require('dotenv').config();
+// var twitInfo = require('./config.js');
 var quotesJSON = require('./quotes.js');
 var twitter = new Twit(twitInfo);
 var quotesArr = [];
 var quote;
+var twitInfo = {
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token: process.env.access_token,
+  access_token_secret: process.env.access_token_secret
+};
 
 var getQuotes = function () {
   console.log('getQuotes');
