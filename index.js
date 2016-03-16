@@ -1,9 +1,7 @@
 var Twit = require('twit');
 var http = require('http');
 require('dotenv').config();
-// var twitInfo = require('./config.js');
 var quotesJSON = require('./quotes.js');
-var twitter = new Twit(twitInfo);
 var quotesArr = [];
 var quote;
 var twitInfo = {
@@ -12,9 +10,9 @@ var twitInfo = {
   access_token: process.env.access_token,
   access_token_secret: process.env.access_token_secret
 };
+var twitter = new Twit(twitInfo);
 
 var getQuotes = function () {
-  console.log('getQuotes');
   var tempArr = quotesJSON();
   for(var i = 0; i < tempArr.length; i++) {
     quotesArr.push(tempArr[i]);
@@ -25,14 +23,12 @@ var getQuotes = function () {
 };
 
 var chooseQuote = function() {
-  console.log('chooseQuote');
   var tempQuote;
   if(quotesArr <= 0) {
     console.log("Quotes array is less than zero!");
     return;
   }
   tempQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)];
-  console.log('tempQuote == ' + tempQuote);
   return tempQuote;
 }
 
