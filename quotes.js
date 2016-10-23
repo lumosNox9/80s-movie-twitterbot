@@ -18,7 +18,8 @@ module.exports = function() {
   "\"Ray, if someone asks if you're a god, you say YES!\" -- Ghostbusters",
   "\"Why did it have to be snakes?\" -- Raiders of the Lost Ark",
   "\"Nuke it from orbit, it's the only way to be sure.\" -- Aliens",
-  "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop"
+  "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",
+  "\"As you wish. \" --The Princess Bride"
 ];
 
   return quotes;
