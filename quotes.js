@@ -20,7 +20,7 @@ module.exports = function() {
   "\"Nuke it from orbit, it's the only way to be sure.\" -- Aliens",
   "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",    
   "\"Hey, you guuuys!\" -- Goonies",
-  "\"I can bear no longer! Goblin King! Goblin King! Wherever you may be take this child of mine far away from me!\" -- Labyrinth"  
+  "\"I can bear no longer! Goblin King! Goblin King! Wherever you may be take this child of mine far away from me!\" -- Labyrinth",  
   "\"Say hello to my little friend!\" -- Scarface"
 ];
 
