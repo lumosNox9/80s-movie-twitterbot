@@ -21,7 +21,8 @@ module.exports = function() {
   "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",    
   "\"Hey, you guuuys!\" -- Goonies",
   "\"I can bear no longer! Goblin King! Goblin King! Wherever you may be take this child of mine far away from me!\" -- Labyrinth",  
-  "\"Say hello to my little friend!\" -- Scarface"
+  "\"Say hello to my little friend!\" -- Scarface",
+  "\"One thing about living in Santa Carla I never could stomach; all the damn vampires.\" -- The Lost Boys"
 ];
 
   return quotes;
