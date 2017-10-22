@@ -20,6 +20,7 @@ module.exports = function() {
   "\"Nuke it from orbit, it's the only way to be sure.\" -- Aliens",
   "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",
   "\"As you wish. \" --The Princess Bride"
+  "\"Be excellent to each other!\" -- Bill and Ted's Excellent Adventure"
 ];
 
   return quotes;
