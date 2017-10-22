@@ -19,7 +19,7 @@ module.exports = function() {
   "\"Why did it have to be snakes?\" -- Raiders of the Lost Ark",
   "\"Nuke it from orbit, it's the only way to be sure.\" -- Aliens",
   "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",
-  "\"The question isn't what are we going to do. The question is what aren't we going to do.\" --Ferris Bueller's Day Off"
+  "\"Be excellent to each other!\" -- Bill and Ted's Excellent Adventure"
 ];
 
   return quotes;
