@@ -21,7 +21,9 @@ module.exports = function() {
   "\"Excuse me, I have to go. Somewhere there is a crime happening.\" -- RoboCop",    
   "\"Hey, you guuuys!\" -- Goonies",
   "\"I can bear no longer! Goblin King! Goblin King! Wherever you may be take this child of mine far away from me!\" -- Labyrinth",  
-  "\"Say hello to my little friend!\" -- Scarface"
+  "\"Say hello to my little friend!\" -- Scarface",
+  "\"As you wish. \" --The Princess Bride",
+  "\"Be excellent to each other!\" -- Bill and Ted's Excellent Adventure"
 ];
 
   return quotes;
