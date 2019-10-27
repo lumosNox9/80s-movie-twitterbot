@@ -23,7 +23,10 @@ module.exports = function() {
   "\"I can bear no longer! Goblin King! Goblin King! Wherever you may be take this child of mine far away from me!\" -- Labyrinth",  
   "\"Say hello to my little friend!\" -- Scarface",
   "\"As you wish. \" --The Princess Bride",
-  "\"Be excellent to each other!\" -- Bill and Ted's Excellent Adventure"
+  "\"Be excellent to each other!\" -- Bill and Ted's Excellent Adventure", 
+  "\"I may be a beginner at some things, but I've got a black belt in shopping!\" -- Troop Beverly Hills",
+  "\"I don't know what the hell's in there, but it's weird and pissed off, whatever it is.\" -- The Thing"
+    
 ];
 
   return quotes;
